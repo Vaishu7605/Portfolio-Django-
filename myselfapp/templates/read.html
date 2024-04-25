@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <table  border='1px' style="width:100%">
+            <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Subject</th>
+            <th>Message</th>
+            </tr>
+
+            <tr>
+                {% for i in data %}
+                <td>{{i.id}}</td>
+                <td>{{i.Your_Name}}</td>
+                <td>{{i.Your_Email}}</td>
+                <td>{{i.Subject}}</td>
+                <td>{{i.Message}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    </body>
+    </html>
